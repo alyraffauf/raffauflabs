@@ -1,5 +1,5 @@
 {
-  description = "Nix modules for Raffauflabs.com";
+  description = "Nix modules for raffauflabs.com";
 
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
 
@@ -12,7 +12,7 @@
     ] (system: inputs.nixpkgs.legacyPackages.${system}.alejandra);
 
     nixosModules.raffauflabs =
-      import ./raffauflabsModules inputs;
+      import ./nixosModules inputs;
 
     nixosModules.default = self.nixosModules.raffauflabs;
   };

@@ -1,0 +1,2 @@
+# raffauflabs
+NixOS modules running my personal website and home lab, [Raffauf Labs](https://raffauflabs.com). Includes several configurable containers and services, an nginx reverse proxy, ACME configuration, plus ddclient configs for a home lab environment. Mainly used for my [nixcfg](https://github.com/alyraffauf/nixcfg).
