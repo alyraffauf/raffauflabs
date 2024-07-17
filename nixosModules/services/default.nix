@@ -7,5 +7,6 @@
   imports = [
     ./forgejo
     ./navidrome
+    ./plexMediaServer
   ];
 }
