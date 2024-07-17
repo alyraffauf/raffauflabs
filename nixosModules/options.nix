@@ -194,6 +194,28 @@
           type = lib.types.str;
         };
       };
+
+      transmission = {
+        enable = lib.mkEnableOption "Transmission BitTorrent client.";
+
+        bitTorrentPort = lib.mkOption {
+          description = "Port for BitTorrent p2p services.";
+          default = 5143;
+          type = lib.types.int;
+        };
+
+        mediaDirectory = lib.mkOption {
+          description = "Media directory for Transmission.";
+          default = "/mnt/Media";
+          type = lib.types.str;
+        };
+
+        port = lib.mkOption {
+          description = "Port for Transmission.";
+          default = 9091;
+          type = lib.types.int;
+        };
+      };
     };
   };
 }

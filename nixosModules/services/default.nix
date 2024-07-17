@@ -8,5 +8,6 @@
     ./forgejo
     ./navidrome
     ./plexMediaServer
+    ./transmission
   ];
 }
