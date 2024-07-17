@@ -237,6 +237,12 @@
           default = 9091;
           type = lib.types.int;
         };
+
+        subDomain = lib.mkOption {
+          description = "Subdomain for Transmission.";
+          default = "bt";
+          type = lib.types.str;
+        };
       };
     };
   };
