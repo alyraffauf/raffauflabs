@@ -184,6 +184,16 @@
           type = lib.types.str;
         };
       };
+
+      plexMediaServer = {
+        enable = lib.mkEnableOption "Plex Media Server";
+
+        subDomain = lib.mkOption {
+          description = "Subdomain for Plex.";
+          default = "plex";
+          type = lib.types.str;
+        };
+      };
     };
   };
 }
