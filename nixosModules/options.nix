@@ -118,6 +118,22 @@
     };
 
     services = {
+      audiobookshelf = {
+        enable = lib.mkEnableOption "audiobookshelf server.";
+
+        port = lib.mkOption {
+          description = "Port for audiobookshelf.";
+          default = 13378;
+          type = lib.types.int;
+        };
+
+        subDomain = lib.mkOption {
+          description = "Subdomain for audiobookshelf.";
+          default = "podcasts";
+          type = lib.types.str;
+        };
+      };
+
       ddclient = {
         enable = lib.mkEnableOption "Enable ddclient for IP address updating.";
 

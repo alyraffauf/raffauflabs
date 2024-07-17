@@ -5,6 +5,7 @@
   ...
 }: {
   imports = [
+    ./audiobookshelf
     ./forgejo
     ./navidrome
     ./plexMediaServer
