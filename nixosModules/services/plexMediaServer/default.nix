@@ -28,7 +28,10 @@ in {
         };
       };
 
-      plex.enable = true;
+      plex = {
+        enable = true;
+        openFirewall = true;
+      };
     };
   };
 }
