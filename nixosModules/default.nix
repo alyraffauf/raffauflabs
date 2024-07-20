@@ -38,7 +38,10 @@ in {
         zone = config.raffauflabs.domain;
       };
 
-      fail2ban.enable = true;
+      fail2ban = {
+        enable = true;
+        bantime = "1h";
+      };
 
       nginx = {
         enable = true;
