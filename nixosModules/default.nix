@@ -1,12 +1,8 @@
 inputs: {
   config,
-  pkgs,
   lib,
   ...
-}: let
-  mediaDirectory = "/mnt/Media";
-  archiveDirectory = "/mnt/Archive";
-in {
+}: {
   imports = [
     ./containers
     ./options.nix
